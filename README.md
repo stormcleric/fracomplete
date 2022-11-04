@@ -4,7 +4,7 @@ Hi there!
 
 Here you've got a textarea that provides an autocomplete widget which you can invoke by typing "@". My aims when developing this tool were to be able to write down people's names and usernames in a way that is easy to use and does not interfere with the main task - that is, writing a comment!
 
-![Image of Finance Widget](https://github.com/nicoraynaud/react-widget/blob/master/sample.png)
+![Sample of Fracomplete in action!](https://github.com/stormcleric/fracomplete/blob/master/public/Fracomplete.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). And also thanks to [nicorayanud](https://github.com/nicoraynaud/) for his build:widget feature.
 
