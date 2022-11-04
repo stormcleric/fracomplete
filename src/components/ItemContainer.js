@@ -25,15 +25,7 @@ class ItemContainer extends React.Component {
   }
 
   render() {    
-    let items = [];
-    if (this.props.list) {
-      items = this.props.list.filter(
-        item =>
-          item.name.includes(this.state.query) ||
-          item.username.includes(this.state.query)
-      );
-    }
-
+    let items = this.getFilteredList();
     let toRender = '';
     if (items.length > 0) {
       toRender = items.map((item, i) => {
@@ -99,13 +91,14 @@ class ItemContainer extends React.Component {
       case 'Tab':
       case 'ArrowRight':
         event.preventDefault();
-        this.props.onSelectedItem(this.props.list[this.state.selectedIndex]);
+        this.props.onSelectedItem(this.getSelectedItem());
         break;
       // Next item
       case 'ArrowDown': {
         event.preventDefault();
         let index = this.state.selectedIndex + 1;
-        if (index < this.props.list.length)
+        let list = this.getFilteredList();
+        if (index < list.length)
           this.setState({
             selectedIndex: index,
           });
@@ -124,6 +117,31 @@ class ItemContainer extends React.Component {
       default:
         break;
     }
+  }
+  
+  /** Returns current selected item data.
+   * @returns {object} username and name.
+   */
+  getSelectedItem() {
+  debugger;
+    let items = this.getFilteredList();
+    return items[this.state.selectedIndex];
+  }
+  
+  /** Returns the list, filtered.
+   * @returns {object} Filtered user list or empty array.
+   */
+  getFilteredList() {
+  debugger;
+    let items = [];
+    if (this.props.list) {
+      items = this.props.list.filter(
+        item =>
+          item.name.includes(this.state.query) ||
+          item.username.includes(this.state.query)
+      );
+    }
+    return items;
   }
 
   /** This handler allows us to know if the user clicked outside
