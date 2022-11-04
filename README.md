@@ -50,9 +50,11 @@ Here is an example of the 3 widget items in the same page :
 
 ## Developers
 
+You know the deal - fork/clone the project and then...
+
 ### `npm install`
 
-Install all dependencies
+Install all dependencies.
 
 ### `npm start`
 
