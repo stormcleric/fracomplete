@@ -2,7 +2,7 @@
 
 Hi there!
 
-Here you've got a textarea that provides an autocomplete widget which you can invoke by typing "@". My aims when developing this tool were to be able to write down people's names and usernames in a way that is easy to use and does not interfere with the main task - that is, writing a comment!
+Here you've got a textarea that provides an autocomplete widget which you can invoke by typing "@". My aims when developing this tool were to be able to write down people's names and usernames in a way that is easy to use and does not interfere with the main task - that is, writing a comment. So you can just write some text, type an @, select a person - or close the list - and keep on writing!
 
 ![Sample of Fracomplete in action!](https://github.com/stormcleric/fracomplete/blob/master/public/Fracomplete.gif)
 
@@ -88,7 +88,11 @@ That can be included in any web page to trigger the load of the widget.
 
 ## Integration
 
-Pretty straightforward:
+Pretty straightforward.
+
+### HTML
+
+Just id="fracomplete" a div and you're good to go.
 
 ```html
 ...
@@ -100,3 +104,17 @@ Pretty straightforward:
 <script src="[YOUR_LOCATION]/index.js"></script>
 ...
 ```
+### React
+
+You can use this react component inside your React app.
+
+```<Fracomplete />
+
+# Next steps and TODO
+
+Feel free to submit me your suggestions on this widget.
+
+* Allow setting an initial text to the textarea.
+* Importing/fetching list of people from different sources.
+* Map people's properties to Item's properties via config.
+
