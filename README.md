@@ -108,7 +108,11 @@ Just id="fracomplete" a div and you're good to go.
 
 You can use this react component inside your React app.
 
-```<Fracomplete />
+```html
+...
+<Fracomplete />
+...
+```
 
 # Next steps and TODO
 
