@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#mainComponent {
+	width: 600px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#textarea {
+	position: relative;
+    width: 97%;
+    height: 200px;
+    padding: 8px;
+    border: 1px solid #eee;
+    font-size: 18pt;
+}
+
+#itemContainerDiv {
+	height: 300px;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+#itemContainerTable {
+    position: relative;
+    min-height: 64px;
+    max-height: 300px;
+    overflow: auto;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: large;
+}
+
+#itemContainerTable tr, #itemContainerTable td {
+	border: 0px solid #ddd;
+    padding: 4px;
+}
+
+#itemContainerTable tr:nth-child(even){
+	background-color: #f2f2f2;
+	color: #333;
+}
+
+#itemContainerTable tr:hover {
+	background-color: #ddd;
+	color: #333;
+}
+
+.item {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: 64px;
+}
+
+#itemContainerTable .itemSelected, #itemContainerTable .itemSelected:hover,  #itemContainerTable tr.itemSelected:nth-child(even) {
+	background: #222;
+	color: #eee;
+}
+
+.itemAvatar {
+	width: 48px;
+	height: 48px;
+}
+
+.itemAvatarImage {
+	width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.emptyItem {
+	background-color: #ddd;
+	color: #333;
+	text-align: center;
+}
+
+.itemUsername {
+	font-weight:bold;
+}

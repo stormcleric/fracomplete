@@ -41,7 +41,7 @@ class ItemContainer extends React.Component {
     } else {
       toRender = (
         <tr className="item">
-          <td className="emptyItem">No users matched your search.</td>
+          <td className="emptyItem" data-testid='fraNoUsersItem'>No users matched your search.</td>
         </tr>
       );
     }

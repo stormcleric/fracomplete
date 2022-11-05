@@ -1,12 +1,10 @@
 import React from 'react';
 import MainComponent from './components/MainComponent';
 
-function App(props) {
-  return (
-    <div>
-      <MainComponent />
-    </div>
+function Fracomplete(props) {
+  return (    
+      <MainComponent />    
   );
 }
 
-export default App;
+export default Fracomplete;

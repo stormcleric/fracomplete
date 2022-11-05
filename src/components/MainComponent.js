@@ -46,7 +46,7 @@ class MainComponent extends React.Component {
           ref={this.textareaRef}
           id="textarea"
           name="commentbox"
-          placeholder="Write @ to invoke the auto complete.s.."
+          placeholder="Write @ to invoke the auto complete..."
           onChange={this.handleOnChange}
           onKeyPress={this.handleKeyPress}
           value={this.state.value}

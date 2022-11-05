@@ -81,8 +81,8 @@ Runs the test suite.
 ### `npm build:widget`
 
 Builds the app as an embeddable widget. Creates two files :
-- index.js
-- index.css
+- fracomplete.js
+- fracomplete.css
 
 That can be included in any web page to trigger the load of the widget.
 
@@ -100,8 +100,8 @@ Just id="fracomplete" a div and you're good to go.
 ...
 ...
 <!-- /!\ Only add these two tags once per page -->
-<link href="[YOUR_LOCATION]/index.css" rel="stylesheet"/>
-<script src="[YOUR_LOCATION]/index.js"></script>
+<link href="[YOUR_LOCATION]/fracomplete.css" rel="stylesheet"/>
+<script src="[YOUR_LOCATION]/fracomplete.js"></script>
 ...
 ```
 ### React
