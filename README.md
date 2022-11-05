@@ -8,6 +8,12 @@ Here you've got a textarea that provides an autocomplete widget which you can in
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). And also thanks to [nicorayanud](https://github.com/nicoraynaud/) for his build:widget feature.
 
+## Live demo
+
+Not in the mood of cloning this repo into your local? No problem!
+
+Just try this [live demo on Vercel](https://fracomplete.vercel.app) and enjoy the latest master version of the widget.
+
 ## Purpose and disclaimer
 
 This project started as a demo test for a job application, so wish me luck!
