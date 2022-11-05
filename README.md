@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Not in the mood of cloning this repo into your local? No problem!
 
-Just try this [live demo on Vercel](https://fracomplete.vercel.app) and enjoy the latest master version of the widget.
+Just try this <a href="https://fracomplete.vercel.app" target="_blank">live demo on Vercel</a> and enjoy the latest master version of the widget.
 
 ## Purpose and disclaimer
 
