@@ -116,9 +116,38 @@ You can use this react component inside your React app.
 
 ```html
 ...
-<Fracomplete />
+import React from 'react';
+import Fracomplete from './Fracomplete';
+
+class YOUR_CLASS extends React.Component {
+  constructor(props) {
+    ...
+  }
+  
+  render () {
+    return (    
+      <Fracomplete />    
+    );
+  }
+  
+  ...
+}
 ...
 ```
+
+# Accessibility
+
+This widget addresses accessibility concerns in several ways.
+
+## Keyboard-only support
+
+There's no need to use the mouse, you can do everything just with your keyboard - that is, opening the list, closing the list, selecting an item.
+
+## Color contrast validation
+
+The demo has been tested against the following tests.
+
+<a href="https://fracomplete.vercel.app" target="_blank">live demo on Vercel</a>
 
 # Next steps and TODO
 
@@ -126,5 +155,6 @@ Feel free to submit me your suggestions on this widget.
 
 * Allow setting an initial text to the textarea.
 * Importing/fetching list of people from different sources.
+	* API!
 * Map people's properties to Item's properties via config.
 
