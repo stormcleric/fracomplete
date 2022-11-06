@@ -149,7 +149,7 @@ The demo has been color-contrast tested with <a href="https://color.a11y.com/Con
 
 ## Other accessibility tools
 
-The demo has been tested with other tools such as <a href="https://wave.webaim.org/report#/https://fracomplete.vercel.app/" target="_blank">Wave</a>, <a href="https://achecker.achecks.ca/checker/index.php" target="_blank>"AChecker Web Accessibility Checker</a>.
+The demo has been tested with other tools such as <a href="https://wave.webaim.org/report#/https://fracomplete.vercel.app/" target="_blank">Wave</a>, <a href="https://achecker.achecks.ca/checker/index.php" target="_blank">AChecker Web Accessibility Checker</a>.
 
 # Next steps and TODO
 
