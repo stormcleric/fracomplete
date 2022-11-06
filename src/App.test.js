@@ -74,18 +74,3 @@ test('selects first user', async () => {
   const element = screen.queryByText('@');
   expect(element).not.toBeInTheDocument();
 });
-
-test('writes, selects first user, text still present', async () => {
-  window.HTMLElement.prototype.scrollIntoView = function() {};
-  window.HTMLElement.prototype.focus = function() {};
-  render(<App />);
-  let text = 'Hello Paula Turner (pturner0)';
-    
-  await user.click(screen.getByTestId('fraTextArea'));  
-  await user.keyboard('Hello ');
-  await user.keyboard('@');
-  await user.keyboard('[Enter]');
-  
-  const element = screen.getByText(text);
-  expect(element).toBeInTheDocument();
-});
